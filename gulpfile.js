@@ -12,20 +12,16 @@ const sass = require('gulp-sass');
 electric.registerTasks({
 	apiSrc: path.join(require.resolve('metal-component/package.json'), '../src/**/*.js'),
 	apiConfig: {
+		page: {
+			description: 'Senna.js API Docs.',
+			title: 'API',
+			url: '/api',
+			weight: 4
+		},
 		projects: [
-			// {
-			// 	name: 'metal-pagination',
-			// 	repo: 'https://github.com/mairatma/metal-pagination',
-			// 	src: path.join(require.resolve('metal-pagination/package.json'), '../src/Pagination.js')
-			// },
-			// {
-			// 	name: 'metal-component',
-			// 	repo: 'https://github.com/mairatma/metal-component',
-			// 	src: path.join(require.resolve('metal-component/package.json'), '../src/**/*.js')
-			// }
 			{
 				name: 'senna',
-				repo: 'https://github.com/liferay/senna.js',
+				repo: 'https://github.com/Robert-Frampton/senna.js/blob/api-docs/',
 				src: path.join(require.resolve('senna/package.json'), '../src/**/*.js')
 			}
 		]
