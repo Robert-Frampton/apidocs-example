@@ -20,11 +20,11 @@
 	position: relative;
 }
 
-.docs .entity h1 {
+.docs .entity .entity-name {
 	margin-top: 0;
 }
 
-.docs .entity-name-type {
+.docs .entity-name-type, .docs .entity-access {
 	color: #999;
 }
 
@@ -41,4 +41,8 @@
 
 .entity-params .table {
 	width: 100%;
+}
+
+.entity-members h2 {
+	margin: 40px 0 20px;
 }
