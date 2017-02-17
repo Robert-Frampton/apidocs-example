@@ -12,12 +12,6 @@ const sass = require('gulp-sass');
 electric.registerTasks({
 	apiSrc: path.join(require.resolve('metal-component/package.json'), '../src/**/*.js'),
 	apiConfig: {
-		page: {
-			description: 'Senna.js API Docs.',
-			title: 'API',
-			url: '/api',
-			weight: 4
-		},
 		project: {
 			refs: ['v1.5.3', 'v2.1.3'],
 			repo: 'senna.js',

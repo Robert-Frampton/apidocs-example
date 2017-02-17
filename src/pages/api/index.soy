@@ -1,0 +1,44 @@
+---
+title: "API"
+description: "API Docs."
+---
+
+{namespace apiIndex}
+
+/**
+ * @param site
+ */
+{template .render}
+	{call main.render data="all"}
+		{param elementClasses: 'docs' /}
+		{param content kind="html"}
+			{call .topics data="all" /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ * @param site
+ */
+{template .topics}
+	<div class="api-docs-home docs-home-topics">
+		<div class="container-hybrid">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-4 col-xs-16">
+					<div class="row">
+						{foreach $ref in $site.project.refs}
+							<div class="col-md-8 col-xs-16">
+								<a class="topic radial-out" href="/api/{$ref}">
+									<div class="topic-icon">
+										<span class="icon-16-module"></span>
+									</div>
+									<h3 class="topic-title">{$ref}</h3>
+								</a>
+							</div>
+						{/foreach}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{/template}

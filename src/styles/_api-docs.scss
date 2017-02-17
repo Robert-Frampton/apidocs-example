@@ -1,16 +1,19 @@
+.api-docs-home {
+	margin-top: 60px;
+}
+
 .docs section {
 	border: 1px solid #EEE;
 	margin: 20px 0px;
 	padding: 20px;
 }
 
-.docs .sidebar-list-api {
-	padding: 20px;
+.docs .sidebar {
+	height: calc(100vh - 60px);
 }
 
-.docs .sidebar-list-api .sidebar-link {
-	color: #4285F4;
-	padding: 2px 0;
+.docs .sidebar-list {
+	overflow: visible;
 }
 
 .docs .card {
