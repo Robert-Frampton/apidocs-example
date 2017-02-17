@@ -18,13 +18,12 @@ electric.registerTasks({
 			url: '/api',
 			weight: 4
 		},
-		projects: [
-			{
-				name: 'senna',
-				repo: 'https://github.com/Robert-Frampton/senna.js/blob/api-docs/',
-				src: path.join(require.resolve('senna/package.json'), '../src/**/*.js')
-			}
-		]
+		project: {
+			refs: ['v1.5.3', 'v2.1.3'],
+			repo: 'senna.js',
+			src: 'src/**/*.js',
+			user: 'liferay'
+		}
 	},
 	gulp: gulp,
 	plugins: ['electric-marble-components']
